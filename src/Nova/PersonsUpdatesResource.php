@@ -28,10 +28,10 @@ class PersonsUpdatesResource extends Resource
     public static $displayInNavigation = false;
 
     public static function label() {
-        return __("Histórial de Personas");
+        return __("Historial de Personas");
     }
     public static function singularLabel() {
-        return  __("Histórial de Personas");
+        return  __("Historial de Personas");
     }
 
     public function fields(Request $request): array
@@ -39,7 +39,7 @@ class PersonsUpdatesResource extends Resource
         return [
             ID::make()->sortable(),
 
-            Text::make(__('Id Usuario'), 'id_usuario')
+            Text::make(__('Id'), 'id_usuario')
                 ->sortable()
                 ->rules('required'),
 
@@ -57,7 +57,7 @@ class PersonsUpdatesResource extends Resource
 
             BelongsTo::make(__('Position'), 'puesto', Puesto::class)->sortable(),
 
-            BelongsTo::make(__('User'), 'user', User::class),
+//            BelongsTo::make(__('User'), 'user', User::class),
         ];
     }
 
