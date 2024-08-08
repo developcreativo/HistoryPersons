@@ -34,6 +34,7 @@ class PersonsUpdatesResource extends Resource
         return  __("Historial de Personas");
     }
 
+
     public function fields(Request $request): array
     {
         return [

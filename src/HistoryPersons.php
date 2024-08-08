@@ -28,8 +28,4 @@ class HistoryPersons extends Tool
      *
      * @return \Illuminate\View\View
      */
-    public function renderNavigation()
-    {
-        return view('history-persons::navigation');
-    }
 }
